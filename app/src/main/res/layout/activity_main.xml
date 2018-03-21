@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/guinea">
+
+    <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.android.quiz.MainActivity">
+
+
+        <TextView
+            android:id="@+id/quizName"
+            style="@style/QuizNameStyle"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:background="#80FFFFFF"
+            android:padding="15dp"
+            android:text="@string/title"
+            android:textColor="#000000"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/question1Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question1Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/quizName" />
+
+        <TextView
+            android:id="@+id/question1Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="How long guinea pigs live?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question1Title" />
+
+        <RadioGroup
+            android:id="@+id/firstQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question1Text">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                style="@style/RadioButtonStyle"
+                android:buttonTint="#3E2723"
+                android:checked="false"
+                android:text="2 years"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textStyle="normal|bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                style="@style/RadioButtonStyle"
+                android:text="5 years" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                style="@style/RadioButtonStyle"
+                android:text="8 years" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question2Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question2Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/firstQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/question2Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Can you bathe guinea pig?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question2Title" />
+
+        <RadioGroup
+            android:id="@+id/secondQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question2Text">
+
+            <RadioButton
+                android:id="@+id/radioButton1Question2"
+                style="@style/RadioButtonStyle"
+                android:buttonTint="#3E2723"
+                android:checked="false"
+                android:text="No"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textStyle="normal|bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2Question2"
+                style="@style/RadioButtonStyle"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioButton3Question2"
+                style="@style/RadioButtonStyle"
+                android:text="It depends on season" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question3Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question3Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/secondQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/question3Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="How many fingers guinea pigs have on forepaws?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question3Title" />
+
+        <RadioGroup
+            android:id="@+id/thirdQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question3Text">
+
+            <RadioButton
+                android:id="@+id/radioButton1Question3"
+                style="@style/RadioButtonStyle"
+                android:buttonTint="#3E2723"
+                android:checked="false"
+                android:text="3"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textStyle="normal|bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2Question3"
+                style="@style/RadioButtonStyle"
+                android:text="4" />
+
+            <RadioButton
+                android:id="@+id/radioButton3Question3"
+                style="@style/RadioButtonStyle"
+                android:text="5" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question4Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question4Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/thirdQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/question4Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Can guinea pigs eat tomato soup?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question4Title" />
+
+        <RadioGroup
+            android:id="@+id/fourthQuestionRadioGroup"
+            style="@style/RadioGroupStyle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question4Text">
+
+            <RadioButton
+                android:id="@+id/radioButton1Question4"
+                style="@style/RadioButtonStyle"
+                android:buttonTint="#3E2723"
+                android:checked="false"
+                android:text="Yes"
+                android:textColorHighlight="@android:color/black"
+                android:textColorLink="@android:color/black"
+                android:textStyle="normal|bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2Question4"
+                style="@style/RadioButtonStyle"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/radioButton3Question4"
+                style="@style/RadioButtonStyle"
+                android:text="Only with pasta" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/question5Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question5Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fourthQuestionRadioGroup" />
+
+        <TextView
+            android:id="@+id/question5Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="In which colour you can find guinea pigs?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question5Title" />
+
+        <CheckBox
+            android:id="@+id/checkBox1Question5"
+            style="@style/CheckBoxStyle"
+            android:text="brown"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question5Text" />
+
+        <CheckBox
+            android:id="@+id/checkBox2Question5"
+            style="@style/CheckBoxStyle"
+            android:text="black"
+            app:layout_constraintLeft_toRightOf="@id/checkBox1Question5"
+            app:layout_constraintTop_toBottomOf="@+id/question5Text" />
+
+        <CheckBox
+            android:id="@+id/checkBox3Question5"
+            style="@style/CheckBoxStyle"
+            android:text="grey"
+            app:layout_constraintLeft_toRightOf="@id/checkBox2Question5"
+            app:layout_constraintTop_toBottomOf="@+id/question5Text" />
+
+        <TextView
+            android:id="@+id/question6Title"
+            style="@style/QuestionsNameStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:text="@string/question6Title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox1Question5" />
+
+        <TextView
+            android:id="@+id/question6Text"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="In which country guinea pigs were domesticated?"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question6Title" />
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="#95ffffff"
+            android:ems="50"
+            android:hint="Country name"
+            android:inputType="textCapWords"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/question6Text" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="CHECK"
+            android:onClick="displayScore"
+            app:layout_constraintHorizontal_weight="50"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+        <TextView
+            android:id="@+id/result"
+            style="@style/QuestionTextStyle"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>

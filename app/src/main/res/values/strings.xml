@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">quiz</string>
+    <!-- Put quiz title here. -->
+    <string name="title">guinea pig quiz</string>
+    <!-- Put question 1 title here. -->
+    <string name="question1Title">question 1</string>
+    <!-- Put question 2 title here. -->
+    <string name="question2Title">question 2</string>
+    <!-- Put question 3  title here. -->
+    <string name="question3Title">question 3</string>
+    <!-- Put question 4  title here. -->
+    <string name="question4Title">question 4</string>
+    <!-- Put question 5  title here. -->
+    <string name="question5Title">question 5</string>
+    <!-- Put question 6  title here. -->
+    <string name="question6Title">question 6</string>
+    <!-- Put quiz title here. -->
+
+    <!-- Put quiz title here. -->
+
+    <!-- Put quiz title here. -->
+</resources>
