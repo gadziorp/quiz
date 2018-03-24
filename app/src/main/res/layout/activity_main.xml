@@ -193,6 +193,7 @@
         <RadioGroup
             android:id="@+id/fourthQuestionRadioGroup"
             style="@style/RadioGroupStyle"
+            android:layout_marginStart="32dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question4Text">
 

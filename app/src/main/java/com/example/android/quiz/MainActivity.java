@@ -29,8 +29,21 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+
+
+
     // method to calculate result
     public void checkResult(View view) {
+
+        //        check the checkboxes
+        boolean brown = ((CheckBox) findViewById(R.id.checkBox1Question5)).isChecked();
+        boolean black = ((CheckBox) findViewById(R.id.checkBox2Question5)).isChecked();
+        boolean grey = ((CheckBox) findViewById(R.id.checkBox3Question5)).isChecked();
+        //convert answer so string
+        EditText edt = findViewById(R.id.editText);
+        String answer = edt.getText().toString();
+
+
         RadioGroup Question4 = findViewById(R.id.fourthQuestionRadioGroup);
         RadioButton CorrectAnswer4 = findViewById(R.id.radioButton2Question4);
         RadioGroup Question3 = findViewById(R.id.thirdQuestionRadioGroup);
@@ -39,13 +52,6 @@ public class MainActivity extends AppCompatActivity {
         RadioButton CorrectAnswer2 = findViewById(R.id.radioButton2Question2);
         RadioGroup Question1 = findViewById(R.id.firstQuestionRadioGroup);
         RadioButton CorrectAnswer1 = findViewById(R.id.radioButton3);
-        //        check the checkboxes
-        boolean brown = ((CheckBox) findViewById(R.id.checkBox1Question5)).isChecked();
-        boolean black = ((CheckBox) findViewById(R.id.checkBox2Question5)).isChecked();
-        boolean grey = ((CheckBox) findViewById(R.id.checkBox3Question5)).isChecked();
-        //convert answer so string
-        EditText edt = findViewById(R.id.editText);
-        String answer = edt.getText().toString();
         // Is the button now checked?
 
         if (Question4.getCheckedRadioButtonId() == -1) {
@@ -104,8 +110,8 @@ public class MainActivity extends AppCompatActivity {
             score5 = 1;
 
         // checking text in editText View with correct answer
-        if (answer.equals("Peru")) {
-            score6 = 1;
+       if (answer.equals("Peru")) {
+           score6 = 1;
         }
         result = score1 + score2 + score3 + score4 + score5 + score6;
         displayScore(result);
@@ -114,7 +120,7 @@ public class MainActivity extends AppCompatActivity {
     // method to display result
     public void displayScore(int result) {
         TextView viewScore = findViewById(R.id.result);
-        viewScore.setText(result);
+        viewScore.setText(result + "");
     }
 }
 
