@@ -44,7 +44,7 @@
             style="@style/QuestionTextStyle"
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
-            android:text="How long guinea pigs live?"
+            android:text="@string/question1Text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question1Title" />
@@ -58,22 +58,19 @@
             <RadioButton
                 android:id="@+id/radioButton"
                 style="@style/RadioButtonStyle"
-                android:buttonTint="#3E2723"
                 android:checked="false"
-                android:text="2 years"
-                android:textColorHighlight="@android:color/black"
-                android:textColorLink="@android:color/black"
-                android:textStyle="normal|bold" />
+                android:text="@string/answer1Question1"
+                 />
 
             <RadioButton
                 android:id="@+id/radioButton2"
                 style="@style/RadioButtonStyle"
-                android:text="5 years" />
+                android:text="@string/answer2Question1" />
 
             <RadioButton
                 android:id="@+id/radioButton3"
                 style="@style/RadioButtonStyle"
-                android:text="8 years" />
+                android:text="@string/answer3Question1" />
         </RadioGroup>
 
         <TextView
@@ -91,7 +88,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Can you bathe guinea pig?"
+            android:text="@string/question2Text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question2Title" />
@@ -105,22 +102,18 @@
             <RadioButton
                 android:id="@+id/radioButton1Question2"
                 style="@style/RadioButtonStyle"
-                android:buttonTint="#3E2723"
-                android:checked="false"
-                android:text="No"
-                android:textColorHighlight="@android:color/black"
-                android:textColorLink="@android:color/black"
-                android:textStyle="normal|bold" />
+                android:text="@string/answer1Question2"
+                />
 
             <RadioButton
                 android:id="@+id/radioButton2Question2"
                 style="@style/RadioButtonStyle"
-                android:text="Yes" />
+                android:text="@string/answer2Question2" />
 
             <RadioButton
                 android:id="@+id/radioButton3Question2"
                 style="@style/RadioButtonStyle"
-                android:text="It depends on season" />
+                android:text="@string/answer3Question2" />
         </RadioGroup>
 
         <TextView
@@ -138,7 +131,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="How many fingers guinea pigs have on forepaws?"
+            android:text="@string/question3Text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question3Title" />
@@ -152,12 +145,8 @@
             <RadioButton
                 android:id="@+id/radioButton1Question3"
                 style="@style/RadioButtonStyle"
-                android:buttonTint="#3E2723"
-                android:checked="false"
                 android:text="3"
-                android:textColorHighlight="@android:color/black"
-                android:textColorLink="@android:color/black"
-                android:textStyle="normal|bold" />
+                 />
 
             <RadioButton
                 android:id="@+id/radioButton2Question3"
@@ -185,7 +174,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="Can guinea pigs eat tomato soup?"
+            android:text="@string/question4Text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question4Title" />
@@ -193,29 +182,26 @@
         <RadioGroup
             android:id="@+id/fourthQuestionRadioGroup"
             style="@style/RadioGroupStyle"
-            android:layout_marginStart="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question4Text">
 
             <RadioButton
                 android:id="@+id/radioButton1Question4"
                 style="@style/RadioButtonStyle"
-                android:buttonTint="#3E2723"
                 android:checked="false"
-                android:text="Yes"
-                android:textColorHighlight="@android:color/black"
-                android:textColorLink="@android:color/black"
-                android:textStyle="normal|bold" />
+                android:text="@string/answer1question4" />
 
             <RadioButton
                 android:id="@+id/radioButton2Question4"
                 style="@style/RadioButtonStyle"
-                android:text="No" />
+                android:text="@string/answer2question4" />
 
             <RadioButton
                 android:id="@+id/radioButton3Question4"
                 style="@style/RadioButtonStyle"
-                android:text="Only with pasta" />
+                android:text="@string/answer3question4" />
         </RadioGroup>
 
         <TextView
@@ -233,7 +219,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="In which colour you can find guinea pigs?"
+            android:text="@string/question5text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question5Title" />
@@ -274,7 +260,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
-            android:text="In which country guinea pigs were domesticated?"
+            android:text="@string/question6Text"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question6Title" />
@@ -284,37 +270,61 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
             android:background="#95ffffff"
             android:ems="50"
-            android:hint="Country name"
+            android:hint="@string/country_name_EditText"
             android:inputType="textCapWords"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/question6Text" />
 
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
+        <Button
             android:id="@+id/button"
-            android:layout_marginTop="16dp"
-            android:text="CHECK"
-           android:onClick="checkResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:onClick="checkResult"
+            android:text="@string/check_button_Text"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintHorizontal_weight="50"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/editText"
+            app:layout_constraintVertical_bias="0.52" />
 
         <TextView
             android:id="@+id/result"
             style="@style/QuestionTextStyle"
-            android:layout_marginBottom="16dp"
-            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="328dp"
+            android:background="#000000"
+            android:padding="16dp"
             android:text="0"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintLeft_toLeftOf="parent"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/button" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:backgroundTint="#553311"
+            android:onClick="reset"
+            android:padding="16dp"
+            android:text="@string/reset_button_text"
+            android:textColor="#FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/result" />
 
     </android.support.constraint.ConstraintLayout>
 </ScrollView>

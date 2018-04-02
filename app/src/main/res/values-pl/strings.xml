@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">quiz</string>
+
+    <!-- Put quiz title here. -->
+    <string name="title">quiz o świnkach morskich</string>
+
+    <!-- Put question 1 title here. -->
+    <string name="question1Title">Pytanie 1</string>
+
+    <!-- Put question 2 title here. -->
+    <string name="question2Title">Pytanie 2</string>
+
+    <!-- Put question 3  title here. -->
+    <string name="question3Title">Pytanie 3</string>
+
+    <!-- Put question 4  title here. -->
+    <string name="question4Title">Pytanie 4</string>
+
+    <!-- Put question 5  title here. -->
+    <string name="question5Title">pytanie 5</string>
+
+    <!-- Put question 6  title here. -->
+    <string name="question6Title">Pytanie 6</string>
+
+    <!-- Put text for question 6 here. -->
+    <string name="question6Text">Gdzie zostały udomowione swinki morskie?</string>
+
+    <!-- Put hint for editText Question 6 here. -->
+    <string name="country_name_EditText">Nazwa kraju</string>
+
+    <!-- Put text for check button here. -->
+    <string name="check_button_Text">Sprawdź</string>
+
+    <!-- Put text for reset here. -->
+    <string name="reset_button_text">JESZCZE RAZ</string>
+
+    <!-- Put text for question 5 here. -->
+    <string name="question5text">W jakich kolorach występują świnki morskie?</string>
+
+    <!-- Put answer 3 for question 4 here. -->
+    <string name="answer3question4">Tylko z makaronem</string>
+
+    <!-- Put answer 2 for question 4 here.. -->
+    <string name="answer2question4">Nie</string>
+
+    <!-- Put answer 1 for question 4 here.. -->
+    <string name="answer1question4">Tak</string>
+
+    <!-- Put question 4 text here. -->
+    <string name="question4Text">Czy świnki morskie mogą jeść zupę pomidorową?</string>
+
+    <!-- Put question 3 text here. -->
+    <string name="question3Text">Ile palców świnki morskie mają na przednich łapach?</string>
+
+    <!-- Put answer 3 for question 2 here. -->
+    <string name="answer3Question2">Zależy od pory roku</string>
+
+    <!-- Put answer 2 for question 2 here. -->
+    <string name="answer2Question2">Tak</string>
+
+    <!-- Put answer 1 for question 2 here. -->
+    <string name="answer1Question2">Nie</string>
+
+    <!-- Put question 2 text here. -->
+    <string name="question2Text">Czy można kąpać świnki morskie?</string>
+
+    <!-- Put answer 3 for question 1 here. -->
+    <string name="answer3Question1">8 lat</string>
+
+    <!-- Put answer 2 for question 1 here. -->
+    <string name="answer2Question1">5 lat</string>
+
+    <!-- Put answer 1 for question 1 here. -->
+    <string name="answer1Question1">2 lata</string>
+
+    <!-- Put question 1 text here. -->
+    <string name="question1Text">Ile lat żyją świnki morskie?</string>
+</resources>

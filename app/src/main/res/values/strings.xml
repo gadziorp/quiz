@@ -1,22 +1,78 @@
 <resources>
     <string name="app_name">quiz</string>
+
     <!-- Put quiz title here. -->
     <string name="title">guinea pig quiz</string>
+
     <!-- Put question 1 title here. -->
     <string name="question1Title">question 1</string>
+
     <!-- Put question 2 title here. -->
     <string name="question2Title">question 2</string>
+
     <!-- Put question 3  title here. -->
     <string name="question3Title">question 3</string>
+
     <!-- Put question 4  title here. -->
     <string name="question4Title">question 4</string>
+
     <!-- Put question 5  title here. -->
     <string name="question5Title">question 5</string>
+
     <!-- Put question 6  title here. -->
     <string name="question6Title">question 6</string>
-    <!-- Put quiz title here. -->
 
-    <!-- Put quiz title here. -->
+    <!-- Put text for question 6 here. -->
+    <string name="question6Text">In which country guinea pigs were domesticated?</string>
 
-    <!-- Put quiz title here. -->
+    <!-- Put hint for editText Question 6 here. -->
+    <string name="country_name_EditText">Country name</string>
+
+    <!-- Put text for check button here. -->
+    <string name="check_button_Text">CHECK</string>
+
+    <!-- Put text for reset here. -->
+    <string name="reset_button_text">TRY AGAIN</string>
+
+    <!-- Put text for question 5 here. -->
+    <string name="question5text">In which colour you can find guinea pigs?</string>
+
+    <!-- Put answer 3 for question 4 here. -->
+    <string name="answer3question4">Only with pasta</string>
+
+    <!-- Put answer 2 for question 4 here.. -->
+    <string name="answer2question4">No</string>
+
+    <!-- Put answer 1 for question 4 here.. -->
+    <string name="answer1question4">Yes</string>
+
+    <!-- Put question 4 text here. -->
+    <string name="question4Text">Can guinea pigs eat tomato soup?</string>
+
+    <!-- Put question 3 here. -->
+    <string name="question3Text">How many fingers guinea pigs have on forepaws?</string>
+
+    <!-- Put answer 3 for question 2 here. -->
+    <string name="answer3Question2">It depends on season</string>
+
+    <!-- Put answer 2 for question 2 here. -->
+    <string name="answer2Question2">Yes</string>
+
+    <!-- Put answer 1 for question 2 here. -->
+    <string name="answer1Question2">No</string>
+
+    <!-- Put question 2 text here. -->
+    <string name="question2Text">Can you bathe guinea pig?</string>
+
+    <!-- Put answer 3 for question 1 here. -->
+    <string name="answer3Question1">8 years</string>
+
+    <!-- Put answer 2 for question 1 here. -->
+    <string name="answer2Question1">5 years</string>
+
+    <!-- Put answer 1 for question 1 here. -->
+    <string name="answer1Question1">2 years</string>
+
+    <!-- Put question 1 text here. -->
+    <string name="question1Text">How long guinea pigs live?</string>
 </resources>
