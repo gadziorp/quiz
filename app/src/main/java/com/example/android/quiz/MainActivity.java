@@ -14,13 +14,13 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 //initializing variables
-    int score4 = 0;
-    int score3 = 0;
-    int score2 = 0;
-    int score1 = 0;
-    int score5 = 0;
-    int score6 = 0;
-    int result = 0;
+    int score4;
+    int score3;
+    int score2;
+    int score1;
+    int score5;
+    int score6;
+    int result;
 
 
     @Override
@@ -128,17 +128,27 @@ public class MainActivity extends AppCompatActivity {
 
         Button reset = findViewById(R.id.reset);
         reset.setVisibility(View.VISIBLE);
-
+        //result in toast
+        Toast.makeText(this, "Your result is " + result + " points", Toast.LENGTH_LONG).show();
+        //result in textView
         if (result<=2) {
-            viewScore.setText("I'm disappointed.\n Your result is \n " + result + " points");
+           viewScore.setText("I'm disappointed.\n Your result is \n " + result + " points");
         }else
         if (result>2 && result<=4){
-            viewScore.setText("Not bad.\n Your result is \n " + result + " points");
-        } else viewScore.setText("GOOD JOB.\n Your result is \n " + result + " points" +"\n You are Guinea Pig master");
+           viewScore.setText("Not bad.\n Your result is \n " + result + " points");
+        } else  viewScore.setText("GOOD JOB.\n Your result is \n " + result + " points" +"\n You are Guinea Pig master");
     }
 
     public void reset (View view)
     {
+        result = 0;
+        score1 = 0;
+        score2 = 0;
+        score3 = 0;
+        score4 = 0;
+        score5 = 0;
+        score6 = 0;
+
         EditText edt = findViewById(R.id.editText);
         edt.setError(null);
 
