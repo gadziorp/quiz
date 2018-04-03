@@ -2,7 +2,6 @@ package com.example.android.quiz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -13,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-//initializing variables
+    //initializing variables
     int score4;
     int score3;
     int score2;
@@ -108,12 +107,10 @@ public class MainActivity extends AppCompatActivity {
 
         // checking text in editText View with correct answer
 
-        if(answer.isEmpty()) {
+        if (answer.isEmpty()) {
             edt.setError("Please answer");
 
-        }
-        else
-        if (answer.equals("Peru")) {
+        } else if (answer.equals("Peru")) {
             score6 = 1;
         }
 
@@ -131,16 +128,15 @@ public class MainActivity extends AppCompatActivity {
         //result in toast
         Toast.makeText(this, "Your result is " + result + " points", Toast.LENGTH_LONG).show();
         //result in textView
-        if (result<=2) {
-           viewScore.setText("I'm disappointed.\n Your result is \n " + result + " points");
-        }else
-        if (result>2 && result<=4){
-           viewScore.setText("Not bad.\n Your result is \n " + result + " points");
-        } else  viewScore.setText("GOOD JOB.\n Your result is \n " + result + " points" +"\n You are Guinea Pig master");
+        if (result <= 2) {
+            viewScore.setText("I'm disappointed.\n Your result is \n " + result + " points");
+        } else if (result > 2 && result <= 4) {
+            viewScore.setText("Not bad.\n Your result is \n " + result + " points");
+        } else
+            viewScore.setText("GOOD JOB.\n Your result is \n " + result + " points" + "\n You are Guinea Pig master");
     }
 
-    public void reset (View view)
-    {
+    public void reset(View view) {
         result = 0;
         score1 = 0;
         score2 = 0;
@@ -158,7 +154,7 @@ public class MainActivity extends AppCompatActivity {
         Button reset = findViewById(R.id.reset);
         reset.setVisibility(View.GONE);
 
-        CheckBox brown = ( findViewById(R.id.checkBox1Question5));
+        CheckBox brown = (findViewById(R.id.checkBox1Question5));
         CheckBox black = findViewById(R.id.checkBox2Question5);
         CheckBox grey = findViewById(R.id.checkBox3Question5);
 
